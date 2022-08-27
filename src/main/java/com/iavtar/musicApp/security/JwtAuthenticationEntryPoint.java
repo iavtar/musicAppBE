@@ -27,7 +27,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
     ServiceResponse loginExceptionResponse =
         ServiceResponse.builder()
             .message("Invalid Credentials")
-            .code(String.valueOf(HttpStatus.UNAUTHORIZED.value()))
+            .code(HttpStatus.UNAUTHORIZED.value())
             .build();
     String jsonLoginExceptionResponse = objectMapper.writeValueAsString(loginExceptionResponse);
     response.setContentType("application/json");

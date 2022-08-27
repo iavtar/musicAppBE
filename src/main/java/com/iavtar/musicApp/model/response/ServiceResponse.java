@@ -12,6 +12,6 @@ import lombok.Setter;
 public class ServiceResponse {
 
   private String message;
-  private String code;
+  private int code;
 
 }

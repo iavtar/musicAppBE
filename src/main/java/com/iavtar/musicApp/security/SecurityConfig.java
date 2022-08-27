@@ -41,7 +41,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             "/**/*.jpg",
             "/**/*.html",
             "/**/*.css",
-            "/**/*.js")
+            "/**/*.js",
+            "/h2-console/**")
         .permitAll()
         .anyRequest()
         .authenticated();
